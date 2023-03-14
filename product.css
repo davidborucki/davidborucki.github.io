@@ -1,0 +1,127 @@
+.container {
+  max-width: 960px;
+}
+/*
+ * Font for logo 
+ */
+ @font-face {font-family: "Hanley Pro Sans";
+  src: url("http://db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.eot"); /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("http://db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.woff2") format("woff2"), /* chrome firefox */
+  url("http://db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.woff") format("woff"), /* chrome firefox */
+  url("http://db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("http://db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.svg#Hanley Pro Sans") format("svg"); /* iOS 4.1- */
+}
+ .logo-font {
+  font-family: "Hanley Pro Sans";
+  color:#fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+ }
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+/*
+ * OVERRIDE - "Lets Talk"
+ */
+.btn-orange {
+  /* --bs-btn-color: #ec7211;
+  --bs-btn-hover-bg:#ff7300;
+  --bs-btn-hover-border-color:#ff7300;
+  --bs-btn-focus-shadow-rgb:108,117,125;
+  --bs-btn-active-color:#fff;
+  --bs-btn-active-bg:#ec7211;
+  --bs-btn-active-border-color:#ec7211; */
+  --bs-btn-bg: #ec7211;
+  --bs-btn-hover-bg:#ff7300;
+  
+}
+
+.bg-laptop {
+background-image: url("./images/laptop.jpg");
+}
+
+.bg-cafe {
+  background-image: url("./images/cafe_darker.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(100%);
+}
+
+.service-cards {
+  display:inline-block;
+  padding: 20px;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+
+.card .c-red {
+  background-color: red;
+}
+.card .c-blue {
+  background-color: blue;
+}
+.card .c-green {
+  background-color: green;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  } 
+}
