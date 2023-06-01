@@ -52,6 +52,8 @@
   transform: rotate(30deg);
 }
 
+
+
 .product-device::before {
   position: absolute;
   top: 10%;
@@ -71,6 +73,13 @@
   background-color: #e5e5e5;
 }
 
+.par-size {
+  font-size: 1.2rem;
+}
+.white-text {
+  color:#fff !important; 
+  text-decoration: none;
+}
 /*
  * OVERRIDE - "Lets Talk"
  */
@@ -87,6 +96,17 @@
   
 }
 
+.bg-ltgrey {
+  background-color: #f5f5f5;
+}
+.bg-grey {
+  background-color: #e5e5e5;
+}
+.btn-orange-tint {
+  --bs-btn-bg: #b3540b;
+  --bs-btn-hover-bg: #d35e00;
+}
+
 .bg-laptop {
 background-image: url("./images/laptop.jpg");
 }
@@ -96,6 +116,21 @@ background-image: url("./images/laptop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: brightness(100%);
+}
+
+.bg-responsive {
+  background-image: url("./images/responsiveWebDesign.png");
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.bg-searchOptimized {
+  background-image: url("./images/searchEngineOptimization.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .service-cards {
@@ -110,15 +145,27 @@ background-image: url("./images/laptop.jpg");
 .flex-equal > * {
   flex: 1;
 }
+.resize90p {
+  width:90%;
+  height: auto;
+  margin-right: 5%;
+  
+}
 
-.card .c-red {
-  background-color: red;
+.split {
+  
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
-.card .c-blue {
-  background-color: blue;
+.left {
+  left:0;
+  background-color: #8e8e8e;
 }
-.card .c-green {
-  background-color: green;
+.right {
+  right: 0;
+  background-color: #ec7211;
 }
 @media (min-width: 768px) {
   .flex-md-equal > * {

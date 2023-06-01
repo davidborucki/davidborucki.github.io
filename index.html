@@ -79,14 +79,16 @@
     
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
+    <a class="py-2" href="/index.html" aria-label="Product">
       <div class="logo-font">{sws}</div>
       <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>-->
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">About Us</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Services</a>
+    <a class="py-2 d-none d-md-inline-block" href="/about.html">About Us</a>
+    <a class="py-2 d-none d-md-inline-block" href="/services.html">Services</a>
     <!--<a class="py-2 d-none d-md-inline-block" href="#">Reviews</a> -->
-    <a class="py-2 d-none d-md-inline-block orange-head-text" href="#">Contact Us</a>
+    <button type="button" class="btn btn-orange" style="color: white;">
+      <a class="white-text" href="/contact.html">Contact Us</a>
+    </button>
    
   </nav>
 </header>
@@ -95,8 +97,8 @@
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-cafe text-bg-primary">
     <div class="col-md-2 p-lg-4 mx-auto my-5">
       <h1 class="display-4 fw-normal">Make your business shine</h1>
-      <p class="lead fw-normal">With our beautiful web development, our great designs will bring you great business. </p>
-      <a class="btn btn-orange" href="#">Let's Talk</a>
+      <p class="lead fw-normal ">With our beautiful web development, our great designs will bring you great business. </p>
+      <a class="btn btn-orange white-text" href="/services.html">Explore Services</a>
     </div>
  
   </div>
@@ -116,29 +118,30 @@
         
         <h1 class="display-4 fw-normal">Our services</h1>
         <p class="lead fw-normal">Whether you are going for a certain look or if you are simply inspired by other well designed sites, <br> we can take your ideas and turn them into the perfect web design for your audience. <br> We design professional looking websites that will entice users to want to come back. </p>
-        <a class="btn btn-outline-danger" href="#">Learn More</a>
+        <a class="btn btn-outline-danger" href="/services.html">Learn More</a>
+        <br>
         <div class="service-cards">
 
-          <div class="d-flex justify-content-around">
+          <div class="d-flex justify-content-around" style="width: 56rem">
 
           <div class="card border-danger bg-danger d-inline-block" style="width: 18rem;">
-            <img class="card-img-top d-inline" src="/images/codingIcon.png" alt="Card img">
+            <img class="card-img-top d-inline resize90p" src="/images/codingIcon.png" alt="Card img">
             <div class="card-body ">
-              <p class="card-text text-center"> <b>Web Design</b> <br><br> We make the design of your site</p>
+              <p class="card-text text-center"> <h2 class="text-center">Web Design</h2> <br><br><p class="text-center"> We will customly design your page to fit all the needs of your business for an affordable price</p>
             </div>
           </div>
 
           <div class="card border-primary bg-primary d-inline-block" style="width: 18rem;">
             <img class="card-img-top" src="images/gearsIcon.png" alt="Card img">
             <div class="card-body ">
-              <p class="card-text text-center"> <b>Search Engine Optimization</b> <br><br> We make sure your business is available on Google and other search engines</p>
+              <p class="card-text text-center"> <h2 class="text-center">Search Engine Optimization</h2> <br><br> <p class="text-center"> Ranking on Google and other search engines is crucial for business. Using tools such as Google Business Profile will rank you higher on Google, growing your internet prescence in return.</p>
             </div>
           </div>
 
           <div class="card border-success bg-success d-inline-block" style="width: 18rem;">
-            <img class="card-img-top" src="/images/emailIcon.png" alt="Card img">
+            <img class="card-img-top resize90p" src="/images/emailIcon.png" alt="Card img">
             <div class="card-body ">
-              <p class="card-text text-center"> <b>Marketing</b> <br><br> We make sure your business is available on Google and other search engines</p>
+              <p class="card-text text-center"> <h2 class="text-center">Marketing</h2> <br><br> <p class="text-center"> Do you have new promotional offers for your customers? We can automatically deliver that news right into your customers' inbox!</p>
             </div>
           </div>
 
@@ -155,7 +158,6 @@
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
       <small class="d-block mb-3 text-muted">&copy; Sunnyside Web Services 2022</small>
     </div>
     <div class="col-6 col-md">
