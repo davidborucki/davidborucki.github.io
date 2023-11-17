@@ -1,208 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title>SWS</title>
-    <link rel="icon" type="image/x-icon" href="/images/sws-icon.png">
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-
-    
-
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<header class="site-header sticky-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="/index.html" aria-label="Product">
-      <div class="logo-font">{sws}</div>
-      <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>-->
-    </a>
-    <a class="py-2 d-none d-md-inline-block" href="/about.html">About Us</a>
-    <a class="py-2 d-none d-md-inline-block" href="/services.html">Services</a>
-    <!--<a class="py-2 d-none d-md-inline-block" href="#">Reviews</a> -->
-    <button type="button" class="btn btn-orange" style="color: white;">
-      <a class="white-text" href="/contact.html">Contact Us</a>
-    </button>
-   
-  </nav>
-</header>
-
-<main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-cafe text-bg-primary">
-    <div class="col-md-2 p-lg-4 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Make your business shine</h1>
-      <p class="lead fw-normal ">With our beautiful web development, our great designs will bring you great business. </p>
-      <a class="btn btn-orange white-text" href="/services.html">Explore Services</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halina's Cleaning Services</title>
+</head>
+<body>
+    <div class="banner">
+        <h3>The Best Cleaners in McHenry County</h3>
+        <button class="button cta">Call Now</button>
     </div>
- 
-  </div>
-
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-0 text-start bg-laptop">
-    <div class="col-md-9 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Who we are</h1>
-      <p class="lead fw-normal text-wrap" style="width: 40rem;">Sunnyside Web Services is a web design company based out of Crystal Lake, Illinois. We love working with small businesses to create custom user-friendly websites. <br> <br> As a fellow small business, we know that it is a big investment to create a website. That’s why we offer a big agency website without the big agency price! </p>
-      <a class="btn btn-outline-primary" href="#">Learn More</a>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo"><img src="/images/halinas cleaning logo.png" alt="Halina's Cleaning Services"></label>
+        <ul>
+            <li><a class="active" href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Why Choose Us</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h2>Efficient House Cleaning Services in the McHenry County Area</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias praesentium id adipisci, reiciendis dignissimos eius veniam facilis. Sequi, magni commodi a, sed iusto quia ea, excepturi architecto temporibus totam porro.</p>
+        <button class="button cta">Call Now</button>
     </div>
-    </div>
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-0 text-end bg-dark text-bg-dark">
-      <div class="col-md-9 p-lg-5 mx-auto my-5">
-
-
-        
-        <h1 class="display-4 fw-normal">Our services</h1>
-        <p class="lead fw-normal">Whether you are going for a certain look or if you are simply inspired by other well designed sites, <br> we can take your ideas and turn them into the perfect web design for your audience. <br> We design professional looking websites that will entice users to want to come back. </p>
-        <a class="btn btn-outline-danger" href="/services.html">Learn More</a>
-        <br>
-        <div class="service-cards">
-
-          <div class="d-flex justify-content-around" style="width: 56rem">
-
-          <div class="card border-danger bg-danger d-inline-block" style="width: 18rem;">
-            <img class="card-img-top d-inline resize90p" src="/images/codingIcon.png" alt="Card img">
-            <div class="card-body ">
-              <p class="card-text text-center"> <h2 class="text-center">Web Design</h2> <br><br><p class="text-center"> We will customly design your page to fit all the needs of your business for an affordable price</p>
-            </div>
-          </div>
-
-          <div class="card border-primary bg-primary d-inline-block" style="width: 18rem;">
-            <img class="card-img-top" src="images/gearsIcon.png" alt="Card img">
-            <div class="card-body ">
-              <p class="card-text text-center"> <h2 class="text-center">Search Engine Optimization</h2> <br><br> <p class="text-center"> Ranking on Google and other search engines is crucial for business. Using tools such as Google Business Profile will rank you higher on Google, growing your internet prescence in return.</p>
-            </div>
-          </div>
-
-          <div class="card border-success bg-success d-inline-block" style="width: 18rem;">
-            <img class="card-img-top resize90p" src="/images/emailIcon.png" alt="Card img">
-            <div class="card-body ">
-              <p class="card-text text-center"> <h2 class="text-center">Marketing</h2> <br><br> <p class="text-center"> Do you have new promotional offers for your customers? We can automatically deliver that news right into your customers' inbox!</p>
-            </div>
-          </div>
-
-          </div>
-
+    <!-- Section: About Us -->
+    <div class="redbg">
+        <h2>Reliable House Cleaning with an Exceptional Touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magnam et libero maxime, ut laboriosam cum, praesentium vel rem unde impedit. Esse debitis ipsum veniam maxime quasi ipsam? Repellendus, error.</p>
+        <div class="image-container">
+            <img src="/images/cleaning-services-near-me.jpeg" alt="Cleaning Services Near Me" class="image">
         </div>
-      </div>
-      </div>
-
-
-
-</main>
-
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <small class="d-block mb-3 text-muted">&copy; Sunnyside Web Services 2022</small>
+        <button class="button cta"> Call For A Free Quote</button>
     </div>
-    <div class="col-6 col-md">
-      <h5>Sunnyside Web Services</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">*</a></li>
-        <li><a class="link-secondary" href="#">*</a></li>
-        <li><a class="link-secondary" href="#">*</a></li>
-        <li><a class="link-secondary" href="#">*</a></li>
-        <li><a class="link-secondary" href="#">*</a></li>
-        <li><a class="link-secondary" href="#">*</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Company</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">About Us</a></li>
-       <!-- <li><a class="link-secondary" href="#">Reviews</a></li>-->
-        <li><a class="link-secondary" href="#">Blog</a></li>
-        <li><a class="link-secondary" href="#">Book Appointment</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Services</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Web Design</a></li>
-        <li><a class="link-secondary" href="#">Search Engine Optimization</a></li>
-        <li><a class="link-secondary" href="#">Facebook/Email Marketing</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Contact</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">(815)-701-1640</a></li>
-        <li><a class="link-secondary" href="#">sunnysidewebservices@gmail.com</a></li>
-        <li><a class="link-secondary" href="#">FB</a></li>
-        <li><a class="link-secondary" href="#">IG</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+    <!-- About Us End -->
 
+    <!-- Section: Services -->
+    <div>
+        <h2>Explore our offer of home cleaning services in McHenry County</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="/images/cleaning-image-1.jpg" alt="Cleaning Services Near Me" class="image">
+                </div>
+                <h2>Standard Upkeep</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dignissimos possimus temporibus quibusdam molestias earum, libero aperiam incidunt asperiores suscipit repellat recusandae mollitia. Repellendus ducimus culpa, perferendis ea quisquam corporis.</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="/images/cleaning-image-2.jpg" alt="Cleaning Services Near Me" class="image">
+                </div>
+                <h2>In-depth Treatment</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dignissimos possimus temporibus quibusdam molestias earum, libero aperiam incidunt asperiores suscipit repellat recusandae mollitia. Repellendus ducimus culpa, perferendis ea quisquam corporis.</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="/images/cleaning-image-3.jpg" alt="Cleaning Services Near Me" class="image">
+                </div>
+                <h2>Move-in/Move-out Cleaning</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dignissimos possimus temporibus quibusdam molestias earum, libero aperiam incidunt asperiores suscipit repellat recusandae mollitia. Repellendus ducimus culpa, perferendis ea quisquam corporis.</p>
+            </div>
+        </div>
+        <button class="button cta">Call Now</button>
+    </div>
+    <!-- Services End -->
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Section: Locations -->
+    <div class="redbg">
+        <div class="grid-container section-map">
+            <div class="map-item">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188789.52827081454!2d-88.45283280000001!3d42.3246885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f3e7c94047ec7%3A0x6a1f34e2329a2004!2sMcHenry%20County%2C%20IL!5e0!3m2!1sen!2sus!4v1700173996270!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="map-item">
+                <h2>Explore your county while our skilled cleaners do the work</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis rem voluptatem praesentium explicabo iure esse nemo. Facilis repudiandae perspiciatis quo, cupiditate expedita rem accusamus similique dolorum? Nisi tempore doloremque officiis.</p>
+                <button class="button cta">Call Now</button>
+            </div>
+        </div>
+    </div>
 
-      
-  </body>
+    <!-- Locations End -->
+
+    <script>
+        document.getElementById('check').addEventListener('change', function() {
+            var banner = document.querySelector('.banner');
+            banner.style.display = this.checked ? 'none' : 'block';
+        });
+
+        window.addEventListener('scroll', function() {
+        var bannerHeight = document.querySelector('.banner').offsetHeight;
+        var navbar = document.querySelector('nav');
+
+        if (window.scrollY > bannerHeight) {
+            navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
+        }
+    });
+    </script>
+</body>
 </html>
