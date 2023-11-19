@@ -38,7 +38,8 @@ div{
     color: white;
     width: 100%;
     height: 170px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -81,6 +82,16 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.town {
+    color: #ffa500;
+    text-decoration-skip-ink: auto;
+}
+.town:hover {
+    color:#ff7e32;
+}
+.town:active {
+    color:#ffa500;
+}
 
 .cta {
     background-color: #008cba;
@@ -91,8 +102,16 @@ p {
     text-align: center;
     text-decoration: none;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
     font-size: 1.25rem;
+    box-sizing: border-box;
+}
+.cta-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .section{
     scroll-margin-top: 100px;
@@ -143,6 +162,12 @@ p {
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+.navbar-placeholder {
+    height:100px;
+}
+.sticky + .navbar-placeholder {
+    display: none;
 }
 
 nav {
@@ -256,6 +281,9 @@ svg {
     a:hover {
         background: none;
         color: white
+    }
+    .cta:hover {
+        background: #008cba;
     }
 
     #check:checked~ul {
