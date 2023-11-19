@@ -165,6 +165,7 @@ p {
 }
 .navbar-placeholder {
     height:100px;
+    display:none;
 }
 .sticky + .navbar-placeholder {
     display: none;
